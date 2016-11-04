@@ -23,7 +23,7 @@
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
 		<div class="jumbotron">
-			<h1>Michael Bernstein</h1>
+			<h1>{{projectNames}}</h1>
 			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
 		</div>
 
@@ -37,10 +37,10 @@
 		     <li><a href="#{{id}}">{{name}}</a></li>
 		  {{/each}}
 		</ol>
-		
+
 		{{#each projects}} 
 			<div class="project" id="{{id}}">
-				<a href="project.html" class="thumbnail">
+				<a href="project/{{name}}" class="thumbnail">
 					<img src="images/{{image}}" alt="Lorem Pixel image" class="img">
 					<p>{{name}}</p>
 				</a>
